@@ -9,8 +9,9 @@ const questions = [
     "Description of the project",
     "Installation instructions",
     "Usage information",
+    "License type",
     "Contribution guidelines",
-    "Test instructions"
+    "Testing instructions"
 ];
 
 // array of licenses for user
@@ -41,44 +42,43 @@ const init = () => {
             message: questions[1],
             name: 'description'
         },
-        // {            
-        //     type: 'input',
-        //     message: questions[2],
-        //     name: 'usage',
-        // },
-        // {            
-        //     type: 'input',
-        //     message: questions[3],
-        //     name: 'contribution',
-        // },
-        // {            
-        //     type: 'input',
-        //     message: questions[4],
-        //     name: 'projectTitle',
-        // },
-        // {            
-        //     type: 'input',
-        //     message: questions[5],
-        //     name: 'Test',
-        // },
-        // {            
-        //     type: 'checkbox',
-        //     message: questions[5],
-        //     name: 'licenses',
-        //     choices: [...licenses],
-
-        // },
-        // {
-        //     type: 'input',
-        //     message: 'Enter your GitHub Username',
-        //     name: 'github',
+        {            
+            type: 'input',
+            message: questions[2],
+            name: 'installation',
+        },
+        {            
+            type: 'input',
+            message: questions[3],
+            name: 'usage',
+        },
+        {            
+            type: 'checkbox',
+            message: questions[4],
+            name: 'license',
+            choices: [...licenses],
+        },
+        {            
+            type: 'input',
+            message: questions[5],
+            name: 'contribution',
+        },
+        {            
+            type: 'input',
+            message: questions[5],
+            name: 'test',          
+        },
+        {
+            type: 'input',
+            message: 'Enter your GitHub Username',
+            name: 'github',
             
-        // },
-        // {
-        //     type: 'input',
-        //     message: 'Enter your Email address',
-        //     name: 'email',            
-        // },
+        },
+        {
+            type: 'input',
+            message: 'Enter your Email address',
+            name: 'email',            
+        },
         
     ])
     .then((response) => writeToFile("README.md", generateMarkdown(response)))
