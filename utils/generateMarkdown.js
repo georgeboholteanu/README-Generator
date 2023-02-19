@@ -27,53 +27,54 @@ ${data.description}
 ## Table of contents
 
 - [${data.title}](#${dashString(data.title)})
+  - [Description](#description)
   - [Table of contents](#table-of-contents)
-    - [Description](#description)
-    - [Installation instructions](#installation-instructions)
-    - [Usage](#usage)
-    - [License type](#license-type)
-    - [Contribution guidelines](#contribution-guidelines)
-    - [Testing instructions](#testing-instructions)
-    - [Questions](#questions)
+    - [**Installation instructions**](#installation-instructions)
+    - [**Usage**](#usage)
+    - [**License type**](#license-type)
+    - [**Contribution guidelines**](#contribution-guidelines)
+    - [**Testing instructions**](#testing-instructions)
+    - [**Questions**](#questions)
 
 &nbsp;
 
-### Installation instructions
+### **Installation instructions**
 
 ${data.installation}
 
 &nbsp;
 
-### Usage
+### **Usage**
 
 ${data.usage}
 
 &nbsp;
 
-### License type
+### **License type**
 
 The application is covered under **${(data.license).toString()}** license.
 
 &nbsp;
 
-### Contribution guidelines
+### **Contribution guidelines**
 
 ${data.contribution}
 
 &nbsp;
 
-### Testing instructions
+### **Testing instructions**
 
 ${data.test}
 
 &nbsp;
 
-### Questions
+### **Questions**
 
 For any questions or feedback please ping me a message on **[Github](https://github.com/${data.github})** or send an email at <mailto:${data.email}>.
 
 &nbsp;
 
+---
 © 2023 George Boholteanu. All Rights Reserved.
   `;
 }

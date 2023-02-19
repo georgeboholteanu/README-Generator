@@ -27,7 +27,12 @@ const licenses = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFileSync(fileName, data, (err) => err ? console.error(err) : console.log('Readme created!'))
+    try {
+        fs.writeFileSync(fileName, data)
+    } catch(e) {
+        console.log("ERROR: ", e)
+    }
+    console.log('\nReadme created!')
 }
 
 
