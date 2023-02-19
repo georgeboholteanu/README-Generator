@@ -6,12 +6,15 @@ const generateMarkdown = require("./utils/generateMarkdown");
 // array of questions for user
 const questions = [
     "Title of the project", 
+    "Resume your project in a short sentence",
     "Description of the project",
     "Installation instructions",
     "Usage information",
     "License type",
     "Contribution guidelines",
-    "Testing instructions"
+    "Testing instructions",
+    "Enter your GitHub Username",
+    "Enter your Email address"
 ];
 
 // array of licenses for user
@@ -40,48 +43,53 @@ const init = () => {
         {            
             type: 'input',
             message: questions[1],
-            name: 'description'
+            name: 'shortInfo'
         },
         {            
             type: 'input',
             message: questions[2],
-            name: 'installation',
+            name: 'description'
         },
         {            
             type: 'input',
             message: questions[3],
+            name: 'installation',
+        },
+        {            
+            type: 'input',
+            message: questions[4],
             name: 'usage',
         },
         {            
             type: 'checkbox',
-            message: questions[4],
+            message: questions[5],
             name: 'license',
             choices: [...licenses],
         },
         {            
             type: 'input',
-            message: questions[5],
+            message: questions[6],
             name: 'contribution',
         },
         {            
             type: 'input',
-            message: questions[5],
+            message: questions[7],
             name: 'test',          
         },
         {
             type: 'input',
-            message: 'Enter your GitHub Username',
+            message: questions[8],
             name: 'github',
             
         },
         {
             type: 'input',
-            message: 'Enter your Email address',
+            message: questions[8],
             name: 'email',            
         },
         
     ])
-    .then((response) => writeToFile("README.md", generateMarkdown(response)))
+    .then((response) => writeToFile("README_out.md", generateMarkdown(response)))
     .catch((err) => console.error(err));
 }
 
