@@ -89,7 +89,7 @@ const init = () => {
         },
         {
             type: 'input',
-            message: questions[8],
+            message: questions[9],
             name: 'email',            
         },
         
