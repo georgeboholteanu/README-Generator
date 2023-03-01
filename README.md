@@ -51,7 +51,7 @@ node index.js
 
 User will be presented a set of questions and the answers will fill each section of the README document. A new file called README_out.md file will be saved in the project folder after user answers all questions, in order not to overwrite existing readme. User can rename the file later to README.md
 
-A demo video with use instructions can be found bellow.
+A demo video with use instructions can be found by clicking the image bellow.
 
 &nbsp;
 
