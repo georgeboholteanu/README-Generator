@@ -15,6 +15,49 @@ const generateMarkdown = (data) => {
   return `
 # ${data.title}
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+![rating](https://img.shields.io/badge/rating-★★★★☆-brightgreen)
+
+## Table of contents
+
+- [Description](#description)
+- [Installation instructions](#installation-instructions)
+- [Usage](#usage)
+- [License type](#license-type)
+- [Contribution guidelines](#contribution-guidelines)
+- [Testing instructions](#testing-instructions)
+- [Questions](#questions)
+
+## Description
+
+${data.description}
+
+## Installation instructions
+
+${data.installation}
+
+&nbsp;
+
+## Usage
+
+${data.usage}
+
+&nbsp;
+
+## License type
+
+The application is covered under **${(data.license).toString()}** license.
+
+&nbsp;
+
+## Contribution guidelines
+
+${data.contribution}
+
+&nbsp;
+
+## Testing instructions
+
 ${data.shortInfo}
 &nbsp;
 
