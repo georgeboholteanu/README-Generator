@@ -1,6 +1,9 @@
 
 # Readme Generator
 
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/georgeboholteanu)
+![rating](https://img.shields.io/badge/Licence-MIT-brightgreen)
+
 Readme Generator App helps users generate their own README files having a well structured and consistent layout of their README. This allows the project creator to devote more time to working on the project.
 &nbsp;
 

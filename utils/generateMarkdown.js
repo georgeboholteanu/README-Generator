@@ -15,7 +15,7 @@ const generateMarkdown = (data) => {
   return `
 # ${data.title}
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/georgeboholteanu)
 ![rating](https://img.shields.io/badge/rating-★★★★☆-brightgreen)
 
 ## Table of contents
